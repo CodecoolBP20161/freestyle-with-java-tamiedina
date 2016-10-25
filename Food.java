@@ -11,10 +11,38 @@ public class Food{
         this.type = fType;
     }
 
-    public static void main(String[] args){
-        Food pizza = new Food("pizza", 5000.51, "pasta");
+    public static class Vegetable extends Food {
 
-        //System.out.println(pizza.name);
+        public Vegetable(String fName, double fCalory, String fType){
+            super(fName, fCalory, fType);
+        }
+    }
+
+    public static class Fruit extends Food {
+
+        public Fruit(String fName, double fCalory, String fType){
+            super(fName, fCalory, fType);
+        }
+    }
+
+    public static class Meat extends Food {
+
+        public Meat(String fName, double fCalory, String fType){
+            super(fName, fCalory, fType);
+        }
+    }
+
+    public static class Pasta extends Food {
+
+        public Pasta(String fName, double fCalory, String fType){
+            super(fName, fCalory, fType);
+        }
+    }
+
+    public static void main(String[] args){
+        Vegetable salad = new Vegetable("Salad", 5000.51, "vegetable");
+
+        System.out.println(salad.type);
     }
 
     };

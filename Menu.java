@@ -20,8 +20,28 @@ public class Menu{
 
     }
 
+    public static Food inputFoodData() {
+        System.out.println("What did you eat?:  ");
+        Scanner scanner = new Scanner(System.in);
+        String foodName = scanner.nextLine();
+        System.out.println("How many calories was in it?(with decimal precision):  ");
+        Scanner scannerTwo = new Scanner(System.in);
+        double foodCalory = scannerTwo.nextInt();
+        System.out.println("What kind of food was(vegatable/fruit/meat/pasta):   ");
+        Scanner scannerThree = new Scanner(System.in);
+        String foodType = scannerThree.nextInt().toLowerCase();
+
+
+        if(foodType == "vegetable"){
+            Vegetable foodname = new Vegetable(foodName, foodCalory, foodType);
+            break;
+        }
+    }
+
+
     public static void main (String[] args){
         User newUserObject = inputUSerData();
+        Food newFoodObject = inputFoodData();
         //System.out.println(adamObject.name);
 
 
