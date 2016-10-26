@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class Food{
     String name;
@@ -40,9 +39,6 @@ public class Food{
     }
 
     public static void main(String[] args){
-        Vegetable salad = new Vegetable("Salad", 5000.51, "vegetable");
-
-        System.out.println(salad.type);
     }
 
-    };
+};

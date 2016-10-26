@@ -5,7 +5,7 @@ public class User {
     String name;
     int weight;
     int height;
-    public static HashMap<Integer, Food> foodList = new HashMap<Integer, Food>();
+    //public static HashMap<Integer, Food> foodList = new HashMap<Integer, Food>();
 
     public User(String uName, int uWeight, int uHeight) {
         this.name = uName;
@@ -14,6 +14,5 @@ public class User {
     }
 
     public static void main(String[] args) {
-        
     }
 }
